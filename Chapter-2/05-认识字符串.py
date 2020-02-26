@@ -1,8 +1,8 @@
-"""__author__ = 余婷"""
+# author： Mark
 
 """
 1.什么是字符串（str）
-字符串是python中一种常用的有序但是不可变的容器类的数据类型，可以同时存储多个字符。属于序列
+字符串是python中一种常用的 [有序但是不可变] 的容器类的数据类型，可以同时存储多个字符。属于序列
 
 字面量：使用单引号或者双引号将任意字符括起来，就是字符串常量
 'hjh是否就是23as+-'， "是89===——238jsNM是"
@@ -58,22 +58,22 @@ idc = "\u4e1c"
 print(idc) #可直接加\u 四位16进制编码值
 
 name = "abcd"
-print(name[-1:-5:-1])
+print(name[-1:-5:-1]) #将字符取反
 
-print(len(name))
-print(name[3])
+print(len(name)) # 获取字符串长度
+print(name[3]) # 获取第四个字符内容
 print(name[-1:-2:-1])
 
-print("abc"+"bcd")
+print("abc"+"bcd") # 将字符串拼接
 print("abc"*3)
-print("*"*10 + "%"*10)
+print("*"*10 + "%"*10) # 字符串乘法
 
-print("2" > "-a")
+print("a" > "2") # 比较字符的ASCII码值大小
 #中文范围  4e00 - 9FA5
 
 
 
-# print("是否是中文:", 0x4e00 < = ord(字符) < = 0x9fa5)
+# print("是否是中文:", 0x4e00 <= ord(字符) <= 0x9fa5)
 
 # print("是否是中文:","\u4e00" <= 字符 <= "\u9FA5")
 
@@ -89,3 +89,5 @@ num001 = random.randint(10, 20)
 print(num001)
 newnum01 = "python18080" + str(num001).rjust(3, "0")
 print(newnum01)
+
+# 还有字符串的更多操作，等待后面详细总结

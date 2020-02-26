@@ -1,4 +1,4 @@
-"""__author__ = 余婷"""
+# author: Mark
 
 # 1.注释
 # 注释是程序中专门用来注释说明的文字。不会参与程序编译和执行。对程序的功能没有任何影响
@@ -71,8 +71,8 @@ import keyword   # 导入keyword模块
 print(keyword.kwlist)  # 打印python中所有的关键字
 
 # and = 100  # SyntaxError: invalid syntax
-
 # 7.print函数和input函数
+
 """
 (掌握)
 print(内容) - 在控制台中打印内容(内容必须是python数据)
@@ -82,7 +82,9 @@ print(内容1, 内容2, ..., 内容n) - 在一行打印多个内容，在控制�
 (了解)
 print(内容,内容1，...,内容n, end='换行标志')
 print(内容,内容1，...,内容n, sep='分割标志')
+sep='' 需要print()函数中有多个参数
 """
+
 print('打印1')
 print(100)
 print('abc', 'bcd', 200)
