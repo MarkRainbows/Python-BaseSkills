@@ -1,4 +1,4 @@
-"""__author__ = 余婷"""
+# author： Mark
 
 """
 1.什么是字符串
@@ -34,7 +34,7 @@ ord(字符) - 获取字符对应的编码值
 
 """
 print(chr(0x4E01))
-yu = ord('余')
+liu = ord('刘')
 ting = ord('婷')
 print(hex(yu), hex(ting))
 

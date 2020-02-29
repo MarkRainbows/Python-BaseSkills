@@ -1,8 +1,5 @@
-"""__author__ = 余婷"""
+# author： Mark
 
-"""
-python中的分之结构只有if语句，没有switch
-"""
 num = 11
 print('%d是偶数' % (num))
 
@@ -75,7 +72,7 @@ b.执行过程:
 """
 # 随机产生一个整数，如果是奇数打印'XXX是奇数'，否则打印'XXX是偶数'
 num = random.randint(0, 20)
-if num & 1 == 1:
+if num & 1 == 1: # 将数字和1进行位运算
     print('%d是奇数' % num)
 else:
     print('%d是偶数' % num)
@@ -146,7 +143,7 @@ str1 = 'Ahjdd'
 if str1[0].isalpha():
     print('以字母开头')
     # 字符串.isupper() -> 是否是大写字母
-    if str1[0].isupper():
+    if str1[0].capitalize():
         print('大写字母')
 
 # 方法二：

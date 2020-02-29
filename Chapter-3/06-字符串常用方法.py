@@ -1,4 +1,4 @@
-"""__author__ = 余婷"""
+# author： Mark
 """
 1.字符串.capitalize() - 将字符串第一个字符转换成大写
 """
@@ -41,12 +41,12 @@ print(new_num)
 """
 """
 str1 = '23434'
-print(str1.isalpha())
+print(str1.isalpha()) # 判断字符串是否全是字母
 
 str1 = '壹23万萬43幺一百'
-print(str1.isdigit())
+print(str1.isdigit()) # 判断字符串是否全是阿拉伯数字
 
-print(str1.isnumeric())
+
 
 """
 3.join(seq)
@@ -61,8 +61,8 @@ print(str1.join(str2))
 max(字符串)
 min(字符串)
 """
-print(max('ahajsxnzhsjdf234'))
-print(min('ahajsxnzhsjdf234'))
+print(max('ahajsxnzhsjdf234')) # 判断字符串中编码值最大的字符
+print(min('ahajsxnzhsjdf234')) # 判断字符串中编码值最小的字符
 
-print('agskshabkkhabba'.replace('a', '/'))
-print('agsk*shabkk*habba'.split('*'))
+print('agskshabkkhabba'.replace('a', '/')) # 将字符串中所有的a字符全部替换成 /
+print('agsk*shabkk*habba'.split('*')) # 将字符串按照指定的字符切割成列表

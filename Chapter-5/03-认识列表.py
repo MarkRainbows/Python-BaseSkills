@@ -1,4 +1,4 @@
-"""__author__ = 余婷"""
+# author: Mark
 
 """
 1.什么是列表列表(list)
@@ -19,5 +19,5 @@ print(list1)
 list2 = []
 print(list2, type(list2))
 
-# 用一个变量保存一个半的学生成绩
+# 用一个变量保存一个班的学生成绩
 scores = [89, 78, 90, 32, 59, 99]

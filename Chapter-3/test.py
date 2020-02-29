@@ -24,13 +24,22 @@ print('1' < 'a')
 
 '''
 
-read = '12334一二'
-print(read.isdecimal())
+# read = '12334一二'
+# print(read.isdecimal())
 
-cos = "AKLo\n"
-print(cos.join("***"))
-print(cos.ljust(50," "))#字符左对齐
-print(cos.rjust(50," "))#字符右对齐
-# print(cos.replace("K","king"))#替换字符
-print(cos.rfind("K"))
-print(cos.rstrip('Lo'))
+# cos = "AKLo\n"
+# print(cos.join("***"))
+# print(cos.ljust(50," "))#字符左对齐
+# print(cos.rjust(50," "))#字符右对齐
+# # print(cos.replace("K","king"))#替换字符
+# print(cos.rfind("K"))
+# print(cos.rstrip('Lo'))
+
+
+a = '1110101一二壹'
+
+print(a.isnumeric())
+
+
+cos = "AKL0000000 "
+print(cos.swapcase())

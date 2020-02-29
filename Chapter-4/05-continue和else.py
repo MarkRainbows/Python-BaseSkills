@@ -1,6 +1,8 @@
-"""__author__ = 余婷"""
+# author: Mark
 
-# 1.continue
+# 1.continue 
+
+
 """
 continue是一个关键字，只能写在循环体中
 
@@ -69,7 +71,7 @@ else结构不会影响原循环的执行过程。当循环自然死亡的时候�
 
 for x in range(10):
     print(x)
-    if x == 3:
-        break
+    if x % 3 == 0:
+        continue
 else:
     print('for循环结束了')
