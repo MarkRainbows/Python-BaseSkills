@@ -1,4 +1,4 @@
-"""__author__ = 余婷"""
+# author: Mark
 
 # 1.查(获取字典的值)
 """
@@ -9,6 +9,7 @@ a.获取单个值
 
 None是python中的关键字，表示一个特殊值，(没有、空的意思)
 """
+
 dog1 = {'name': '旺财', 'age': 3, 'color': '黄色', 'type': '土狗'}
 print(dog1['name'])
 print(dog1['color'])
@@ -37,6 +38,7 @@ for key, value in dog1.items():
 dict1 = {'a': 100}
 dict1['b'] = 200
 print(dict1)
+
 
 """
 字典1.update(序列)  -  将序列中的元素转换成键值对，然后再添加到字典1中
@@ -75,7 +77,6 @@ b.字典.pop(key)  - 取出字典中key对应的值（删除整个键值对）
 person = {'name': '张三', 'age': 30, 'sex': '男'}
 age = person.pop('age')
 print(person, age)
-
 
 
 person = {'name': '张三', 'age': 30, 'sex': '男'}

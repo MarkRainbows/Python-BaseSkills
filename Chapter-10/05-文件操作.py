@@ -1,4 +1,5 @@
-"""__author__ = 余婷"""
+# author: Mark
+
 """
 1.数据本地化
 将数据以文件的形式，存储到本地磁盘中。
@@ -15,11 +16,14 @@ open(file, mode='r',...,encoding=None)  - 返回的是被打开的文件对象(�
 
 说明:
 file - 字符串；需要打开的文件的路径(可以是绝对路径，也可以是相对路径)
-       (一般不使用)绝对路径: /Users/yuting/Workspace/JAVA/授课/python1808/day11-文件操作/files/蓝莲花.txt
-       相对路径：(相对当前的py对应的目录)
-                ./ -- 当前目录(./可以省略)   aaa.txt  ./aaa.txt
-                ../ -- 当前目录的上层目录
-                .../ -- 当前目录的上上层目录 
+    如果你取相对路径不是在主文件里，可能就会有相对路径问题："No such file or directory"  
+    因为 python 的相对路径，相对的都是主文件。
+
+    绝对路径: /Volumes/MKpossible/Python-BaseSkills/Chapter-10/files/蓝莲花.txt
+    相对路径：(相对当前的py对应的目录)，需要把执行环境改为当前文件夹下，即可执行成功
+            ./ -- 当前目录(./可以省略)   aaa.txt  ./aaa.txt
+            ../ -- 当前目录的上层目录
+            .../ -- 当前目录的上上层目录 
                 
 
 mode - 打开方式; 打开文件后不同的操作，对应的打开方式不一样
@@ -62,10 +66,10 @@ f.close()
 5.文件的写操作
 文件对象.write(字符串) - 将字符串中的内容写入到文件中（会完全覆盖原文件中的内容）
 
-'w' - 完全覆盖
+'w' - 完全覆盖,也可以用来创建新文件
 'a' - 在原文件的最后添加
 """
-f = open('files/蓝莲花.txt', 'a', encoding='utf-8')
+f = open('/Volumes/MKpossible/Python-BaseSkills/Chapter-10/files/蓝莲花.txt', 'a', encoding='utf-8')
 f.write('你好吗？')
 
 """

@@ -1,4 +1,5 @@
-"""__author__ = 余婷"""
+# author：Mark
+
 
 """
 1.什么是元祖（tuple）
@@ -6,7 +7,8 @@
 有序 - 可以通过下标获取元素
 不可变 - 不支持增、删、改
 
-2.元祖的字面量: 通过小括号将多个元素括起来，多个元素之间用逗号隔开
+2.元祖的表现形式: 通过小括号将多个元素括起来，多个元素之间用逗号隔开
+
 """
 tuple1 = (1, True, 'abc', [1, 2], 1)
 print(tuple1)
@@ -28,19 +30,19 @@ x, y = tuple4  # x, y = 10, 20
 print(x, y)
 
 # 通过在变量名前加*,获取没有*的变量获取到的元素的剩下的部分。以列表的形式返回
-tuple5 = ('余婷', 98, 90, 99, 87, 78)
+tuple5 = ('Mark', 98, 90, 99, 87, 78)
 name, *scores = tuple5
-print(name, scores)  # '余婷' [98, 90, 99, 87, 78]
+print(name, scores)  # 'Mark' [98, 90, 99, 87, 78]
 
 name, number, *scores = tuple5
-print(name, number)   # '余婷'  98
+print(name, number)   # 'Mark'  98
 print(scores)  # [90, 99, 87, 78]
 
 *list1, num = tuple5
-print(list1, num)  # ['余婷', 98, 90, 99, 87]  78
+print(list1, num)  # ['Mark', 98, 90, 99, 87]  78
 
 num1, *list1, num2 = tuple5
-print(num1, num2)   # 余婷 78
+print(num1, num2)   # Mark 78
 print(list1)  # [98, 90, 99, 87]
 
 # (了解)
@@ -51,10 +53,10 @@ list1 = ['aa', 'bb', 'cc']
 # b = list1[1]
 # c = list1[2]
 # *list1 == a b c
-print(*list1)
+print(*list1) # 代表容器中的全部值
 
 """
-3.获取元祖元素和列表获取列表回去列表元素一模一样
+3.获取元祖元素跟获取列表素一模一样
 """
 tuple1 = 1, 2, 3, 4, 5
 print(tuple1[1])
@@ -77,3 +79,9 @@ print(min((1, 89, 0)))
 """
 5.元祖相关的方法： 只有列表中的count和index
 """
+
+tuple1 = (1, 2, 3)
+
+tuple1.count(1)
+tuple1.index(1)
+

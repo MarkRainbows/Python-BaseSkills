@@ -1,34 +1,25 @@
-"""__author__ = 余婷"""
+# author：Mark
 
 import copy
-"""
-copy.copy(对象)  - 浅拷贝 （直接拷贝元素的值产生一个新的地址）
-copy.deepcopy(对象) - 深拷贝(不会直接复制地址，而是将地址对应的值拷贝一份产生新的地址)
-"""
-numbers1 = [1, 2, 3]
-numbers2 = [10, 20, 30]
-list1 = [numbers1, numbers2]
 
-print('1.浅拷贝：')
+list1 = [1, 2, 3, 4, 5, 6,[12,123,666]]
 list2 = list1.copy()
-print('修改前list1:', list1)
-print('修改前list2:', list2)
-print('针对list1进行修改')
-list1.append(111)
-list1[0].append(100)
-print('修改后list1:', list1)
-print('修改后list2:', list2)
+list3 = copy.deepcopy(list1)
+list1[-1][2] = 999
+
+print(list1)
+print(list2) 
+print(list3) 
+# 结果：
+# [1, 2, 3, 4, 5, 6, [12, 123, 999]]
+# [1, 2, 3, 4, 5, 6, [12, 123, 999]]
+# [1, 2, 3, 4, 5, 6, [12, 123, 666]]
+
+# 结论：
+# 浅copy复制的是数字对应的地址，但是这些地址中对应的数据却没有变，所以如果在原列表中改变了数据对应的值，
+# 那么浅copy列表中的值也会跟着该变。
+
+# deepcopy 直接复制地址对应的数据，无论原列表怎么改变，deepcopy的列表都不会跟着改变。
 
 
-numbers1 = [1, 2, 3]
-numbers2 = [10, 20, 30]
-list1 = [numbers1, numbers2]
-print('2.深拷贝')
-list2 = copy.deepcopy(list1)
-print('修改前list1:', list1)
-print('修改前list2:', list2)
-print('针对list1进行修改')
-list1.append(111)
-list1[0].append(100)
-print('修改后list1:', list1)
-print('修改后list2:', list2)
+

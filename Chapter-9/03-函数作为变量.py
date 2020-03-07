@@ -1,4 +1,5 @@
-"""__author__ = 余婷"""
+# author：Mark
+
 """
 python中，声明函数其实就是声明一个类型是function的变量。函数名就是变量名
 
@@ -94,6 +95,7 @@ def sort(key=None, reverse=False)
 key - 确定排序的时候以什么值为标准来排序(默认情况下，以列表的元素的大小为标准来排序);
       需要传一个函数，函数需要一个参数和一个返回值。这儿的参数是列表的元素
 reverse - 是否降序排序, 需要传一个bool值
+
 """
 # list2.sort(reverse=True)
 
@@ -158,12 +160,12 @@ my_list2 = [
 ]
 
 # 取最大年龄对应的字典
-max_age = max(my_list2, key=lambda x: x['age']) # ????????  X 是默认列表中元素吗？
+max_age = max(my_list2, key=lambda x: x['age']) #  x代表匿名函数的参数
 
 print(max_age)
 
 # 取最大成绩对应的字典
-max_score = max(my_list2, key=lambda x: x['score'])# ?????????
+max_score = max(my_list2, key=lambda x: x['score'])
 print(max_score)
 
 
