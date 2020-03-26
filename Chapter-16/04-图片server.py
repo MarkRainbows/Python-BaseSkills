@@ -1,11 +1,12 @@
-"""__author__ = 余婷"""
+# author: Mark
+
 import socket
 
 # 1.创建套接字对象
 server = socket.socket()
 
 # 2.绑定ip和端口
-server.bind(('10.7.187.121', 8081))
+server.bind(('192.168.1.102', 9090))
 
 # 3.监听
 server.listen(512)
@@ -26,7 +27,7 @@ while True:
     #     conversation.send(message.encode('utf-8'))
 
     # ===========1.发送图片=============
-    with open('luffy.png', 'rb') as f:
+    with open('/Volumes/MKpossible/Python-BaseSkills/Chapter-16/王也.jpg', 'rb') as f:
         content = f.read()
         conversation.send(content)
 

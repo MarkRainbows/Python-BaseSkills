@@ -1,4 +1,4 @@
-"""__author__ = 余婷"""
+# author: Mark
 
 import requests
 
@@ -15,7 +15,7 @@ get(url, 参数字典) - 返回响应
 # print(response)
 
 # b.自动拼接url
-url = 'https://www.apiopen.top/satinApi'
+url = 'https://www.baidu.com/'
 response = requests.get(url, {'type': 1, 'page': 1})
 print(response)#返回响应的状态码
 

@@ -1,10 +1,10 @@
-"""__author__ = 余婷"""
+# author：Mark
+
 import threading
 import time, datetime
 
 """
 python中提供了threading模块，来支持多线程技术
-
 默认创建的线程叫主线程，其他的线程叫子线程。如果希望代码在子线程中执行，必须手动创建线程对象
 """
 

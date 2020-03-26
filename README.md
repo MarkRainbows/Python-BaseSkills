@@ -32,3 +32,10 @@ python基础
 [第十四章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-14)：类的多继承操作，类的特点：封装、继承、多态，类的运算符重载，python的内存管理机制，pygame的基本使用。
 
 [第十五章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-15)：正则表达式的正则基本符号，正则匹配次数的控制，正则的分之、捕获、和贪婪，python正则re模块的基础认识。
+
+[第十六章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-16)：socket套接字的server，client的使用，socket图片传输，requests网络请求。
+
+[第十七章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-17)：进程的概念，
+python的多线程，线程的子类，子线程join函数的使用，线程锁lock的使用。
+
+[第十八章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-18)：时间模块 time，datetime的详细讲解和使用。

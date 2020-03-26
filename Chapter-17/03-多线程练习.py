@@ -1,4 +1,5 @@
-"""__author__ = 余婷"""
+# author：Mark
+
 import requests
 from threading import Thread
 

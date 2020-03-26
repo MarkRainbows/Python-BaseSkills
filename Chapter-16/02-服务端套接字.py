@@ -1,8 +1,8 @@
-"""__author__ = 余婷"""
+# author: Mark
 
 """
 socket又叫套接字，指的就是实现通信过程的两个端。等待请求的一端叫服务端套接字，发送请求的一端叫客户端套接字
-python中提供了socket模块来支持socket编程
+python中提供了socket模块来支持socket编程。
 """
 import socket
 

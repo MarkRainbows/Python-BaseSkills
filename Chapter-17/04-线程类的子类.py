@@ -1,4 +1,4 @@
-"""__author__ = 余婷"""
+# author：Mark
 
 from threading import Thread, current_thread
 
