@@ -27,7 +27,7 @@ python基础
 
 [第十二章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-12)：面向对象编程概念，类的声明，类的属性和方法，类的初始化__init__(),对象属性的增删改查，类的字段。
 
-[第十三章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-13)：类的三种方法(对象，类，静态)，类的私有化，对象属性的getter和setter的使用，类的继承，子类添加方法和调用父类      方法，子类添加对象属性操作。
+[第十三章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-13)：类的三种方法(对象，类，静态)，类的私有化，对象属性的getter和setter的使用，类的继承，子类添加方法和调用父类方法，子类添加对象属性操作。
 
 [第十四章](https://github.com/MarkRainbows/Python-BaseSkills/tree/master/Chapter-14)：类的多继承操作，类的特点：封装、继承、多态，类的运算符重载，python的内存管理机制，pygame的基本使用。
 
